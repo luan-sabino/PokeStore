@@ -1,0 +1,148 @@
+html,
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100%;
+    background-color: #ffffff;
+}
+
+header{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-bottom: 2px solid #aeaeae;
+}
+
+header a:first-child{
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+header a{
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+header img{
+    width: 40px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 600px;
+    border: 2px solid #b3e5fc;
+    box-shadow: 15px 15px #82b3c9;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 30px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.container header{
+    width: auto;
+}
+
+.resumo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 15px;
+}
+
+a{
+    padding: 8px;
+    border: 2px solid #b3e5fc;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    box-shadow: 5px 5px #82b3c9;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+a:active{
+    box-shadow: 1px 1px #668b9c;
+    transform: translate3d(4px, 4px, 0);
+}
+
+a:hover{
+    background-color: #f7f7f7;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    overflow-y: scroll;
+    margin-top: 15px;
+    margin-bottom: auto;
+    text-align: center;
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.produtos span{
+    border-bottom: 2px solid #b3e5fc;
+    margin: 4px;
+}
+
+.entrega{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 30px;
+}
+
+.entrega img{
+    width: 15%;
+    height: auto;
+    margin: auto;
+}
+
+@media screen and (max-width : 855px) {
+
+    .container{
+        width: auto;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+}
+
+@media screen and (max-width : 600px) {
+
+    .entrega img{
+        width: 77px
+    }
+}
+
+@media screen and (max-width : 375px) {
+
+    .resumo span{
+        margin-left: 15px;
+        margin-right: 15px;
+        text-align: center;
+    }
+}

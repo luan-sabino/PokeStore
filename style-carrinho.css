@@ -1,0 +1,244 @@
+html,
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100%;
+}
+
+header{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-bottom: 2px solid #aeaeae;
+}
+
+header a:first-child{
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+header a{
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+header img{
+    width: 40px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px #82b3c9;
+    border: 2px solid #b3e5fc;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.produtos{
+    margin: auto;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.produto img{
+    width: 25%;
+    height: auto;
+    border: 0px solid transparent;
+    border-radius: 50%;
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.produto{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    background-color: #e6ffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.produto div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+    margin-right: 15px;
+    margin-left: auto;
+}
+
+.produto div span:first-child{
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.produto div span:last-child{
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+form{
+    width: auto;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+input[type=text], input[type=number]{
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #e6ffff;
+}
+
+#dadosCartao p {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=submit], a{
+    padding: 8px;
+    border: 2px solid #b3e5fc;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    box-shadow: 5px 5px #82b3c9;
+    background-color: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+input[type=submit]:active ,a:active{
+    box-shadow: 1px 1px #668b9c;
+    transform: translate3d(4px, 4px, 0);
+}
+
+input[type=submit]:hover,a:hover{
+    background-color: #f7f7f7;
+}
+
+input[type=submit]:disabled{
+    background-color: #bbbbbb;
+    opacity: 60%;
+}
+
+.container a:last-child{
+    font-size: 20px;
+    font-weight: medium;
+}
+
+.dados:first-child a{
+    font-size: medium;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+@media screen and (max-width : 1030px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .dados{
+        margin-top: 30px;
+    }
+
+    input[type=submit]{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width : 450px) {
+
+    .dados{
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    input[type=submit]{
+        margin-top: 30px;
+    }
+    
+    .produtos{
+        padding: 0;
+    }
+
+    .produto{
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width : 390px) {
+
+    .produto{
+        flex-direction: column;
+    }
+
+    .produto div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .produto img{
+        width: 30%;
+        margin: auto;
+    }
+
+    .produto div span:first-child{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .produto div span:last-child{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
