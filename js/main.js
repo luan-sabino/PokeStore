@@ -107,6 +107,7 @@ function getProduto(event) {
     var divProduto = document.getElementById(event);
     var nomeProduto = divProduto.querySelector(".desc-produto");
     nomeProduto = nomeProduto.querySelector("span").textContent;
+    console.log(nomeProduto);
     carrinho.push(produtos.find(function (el) { return el.nome == nomeProduto }));
     myStorage.setItem("carrinho", JSON.stringify(carrinho));
 
