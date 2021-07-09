@@ -1,42 +1,13 @@
-html,
-body{
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-body{
-    min-height: 100%;
-    background-color: #ffffff;
-}
-
-header{
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #e0e0e0;
-    padding: 15px;
-    border-bottom: 2px solid #aeaeae;
-}
-
-header a:first-child{
-    margin-left: 0px;
-    margin-right: auto;
-}
-
-header a{
-    margin-left: auto;
-    margin-right: 0px;
-}
-
-header img{
-    width: 40px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+:root{
+    --alto: #e0e0e0;
+    --white: #ffffff;
+    --silver-chalice: #aeaeae;
+    --french-pass: #b3e5fc;
+    --glacier: #82b3c9;
+    --hoki: #668b9c;
+    --alabaster: #f7f7f7;
+    --silver: #bbbbbb;
+    --tranquil: #e6ffff;
 }
 
 .container{
@@ -44,9 +15,9 @@ header img{
     flex-direction: column;
     width: 800px;
     height: 600px;
-    border: 2px solid #b3e5fc;
-    box-shadow: 15px 15px #82b3c9;
-    background-color: #ffffff;
+    border: 2px solid var(--french-pass);
+    box-shadow: 15px 15px var(--glacier);
+    background-color: var(--white);
     margin: auto;
     margin-top: 30px;
     border-bottom-left-radius: 16px;
@@ -65,28 +36,6 @@ header img{
     margin-top: 15px;
 }
 
-a{
-    padding: 8px;
-    border: 2px solid #b3e5fc;
-    border-top-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    outline: none;
-    text-decoration: none;
-    color: black;
-    box-shadow: 5px 5px #82b3c9;
-    background-color: #ffffff;
-    transition: 0.3s;
-}
-
-a:active{
-    box-shadow: 1px 1px #668b9c;
-    transform: translate3d(4px, 4px, 0);
-}
-
-a:hover{
-    background-color: #f7f7f7;
-}
-
 .produtos{
     display: flex;
     flex-direction: column;
@@ -102,7 +51,7 @@ a:hover{
 }
 
 .produtos span{
-    border-bottom: 2px solid #b3e5fc;
+    border-bottom: 2px solid var(--french-pass);
     margin: 4px;
 }
 

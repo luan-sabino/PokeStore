@@ -1,0 +1,95 @@
+:root{
+    --alto: #e0e0e0;
+    --white: #ffffff;
+    --silver-chalice: #aeaeae;
+    --french-pass: #b3e5fc;
+    --glacier: #82b3c9;
+    --hoki: #668b9c;
+    --alabaster: #f7f7f7;
+    --silver: #bbbbbb;
+}
+
+/* ___________________________________________________________  */
+
+html, 
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: scroll;
+}::-webkit-scrollbar{
+    width: 0px;
+    background-color: transparent;
+}
+
+body{
+    min-height: 100%;
+    background-color: var(--white);
+}
+
+/* ___________________ Header ___________________*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    width: auto;
+    padding: 15px;
+    
+    background-color: var(--alto);
+    border-bottom: 2px solid var(--silver-chalice);
+}
+
+header a:first-child{
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+header a{
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+header img{
+    width: 40px;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ___________________ Buttons ___________________*/
+
+input[type=submit], a{
+    padding: 8px;
+    border: 2px solid var(--french-pass);
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    text-decoration: none;
+    color: black;
+    
+    outline: none;
+    box-shadow: 5px 5px var(--glacier);
+    background-color: var(--white);
+    
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+input[type=submit]:active, a:active{
+    box-shadow: 1px 1px var(--hoki);
+    transform: translate3d(4px, 4px, 0);
+}
+
+input[type=submit]:hover, a:hover{
+    background-color: var(--alabaster);
+}
+
+input[type=submit]:disabled{
+    background-color: var(--silver);
+    opacity: 60%;
+}

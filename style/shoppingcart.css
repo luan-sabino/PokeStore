@@ -1,45 +1,13 @@
-html,
-body{
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-body{
-    min-height: 100%;
-}
-
-header{
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #e0e0e0;
-    padding: 15px;
-    border-bottom: 2px solid #aeaeae;
-}
-
-header a:first-child{
-    margin-left: 0px;
-    margin-right: auto;
-}
-
-header a{
-    margin-left: auto;
-    margin-right: 0px;
-}
-
-header img{
-    width: 40px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-body{
-    background-color: #ffffff;
+:root{
+    --alto: #e0e0e0;
+    --white: #ffffff;
+    --silver-chalice: #aeaeae;
+    --french-pass: #b3e5fc;
+    --glacier: #82b3c9;
+    --hoki: #668b9c;
+    --alabaster: #f7f7f7;
+    --silver: #bbbbbb;
+    --tranquil: #e6ffff;
 }
 
 .container{
@@ -55,9 +23,9 @@ body{
     flex-direction: column;
     height: 650px;
     width: 400px;
-    background-color: #ffffff;
-    box-shadow: 5px 5px #82b3c9;
-    border: 2px solid #b3e5fc;
+    background-color: var(--white);
+    box-shadow: 5px 5px var(--glacier);
+    border: 2px solid var(--french-pass);
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
 }
@@ -86,7 +54,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 300px;
-    background-color: #e6ffff;
+    background-color: var(--tranquil);
     padding: 10px;
     border-radius: 10px;
     margin-top: 10px;
@@ -130,40 +98,12 @@ input[type=text], input[type=number]{
     outline: none;
     font-size: 16px;
     margin-top: 20px;
-    background-color: #e6ffff;
+    background-color: var(--tranquil);
 }
 
 #dadosCartao p {
     display: flex;
     flex-direction: row;
-}
-
-input[type=submit], a{
-    padding: 8px;
-    border: 2px solid #b3e5fc;
-    border-top-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    outline: none;
-    text-decoration: none;
-    color: black;
-    box-shadow: 5px 5px #82b3c9;
-    background-color: #ffffff;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-input[type=submit]:active ,a:active{
-    box-shadow: 1px 1px #668b9c;
-    transform: translate3d(4px, 4px, 0);
-}
-
-input[type=submit]:hover,a:hover{
-    background-color: #f7f7f7;
-}
-
-input[type=submit]:disabled{
-    background-color: #bbbbbb;
-    opacity: 60%;
 }
 
 .container a:last-child{
