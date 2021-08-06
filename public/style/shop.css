@@ -78,3 +78,21 @@
     margin: auto;
     margin-top: 10px;
 }
+
+.filtros{
+    display: flex;
+    flex-direction: column;
+}
+
+.precos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin-top: 30px;
+
+}
+
+input[type=number], select{
+    padding: 5px;
+}

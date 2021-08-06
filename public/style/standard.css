@@ -63,7 +63,7 @@ header img{
 
 /* ___________________ Buttons ___________________*/
 
-input[type=submit], a{
+input[type=submit], a, .ordenar, .range_box, .modal{
     padding: 8px;
     border: 2px solid var(--french-pass);
     border-top-left-radius: 8px;
@@ -78,6 +78,9 @@ input[type=submit], a{
     
     transition: 0.1s;
     cursor: pointer;
+
+    font-size: 14px;
+    margin: 5px;
 }
 
 input[type=submit]:active, a:active{
@@ -92,4 +95,47 @@ input[type=submit]:hover, a:hover{
 input[type=submit]:disabled{
     background-color: var(--silver);
     opacity: 60%;
+}
+
+.modal-bg{
+    background-color: #82b2c941;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: zoom 1s;
+}
+
+@keyframes zoom{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+.modal input[type="email"], input[type="password"], input[type="text"]{
+    padding: 5px;
+    font-size: 24px;
+    border: 1px solid var(--hoki);
+    border-radius: 6px;
+    margin: 5px;
+    width: 80%;
+}
+
+.modal .inputs-user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
