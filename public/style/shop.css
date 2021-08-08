@@ -96,3 +96,11 @@
 input[type=number], select{
     padding: 5px;
 }
+
+#containerbtns{
+    display: flex;
+}
+
+#nav-bar > a:nth-child(1){
+    margin-right: 90px;
+}

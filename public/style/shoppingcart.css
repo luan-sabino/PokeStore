@@ -79,6 +79,8 @@
     margin-right: 0px;
 }
 
+
+
 form{
     width: auto;
     height: 400px;
@@ -97,8 +99,13 @@ input[type=text], input[type=number]{
     box-sizing: border-box;
     outline: none;
     font-size: 16px;
+    margin: 0px;
     margin-top: 20px;
     background-color: var(--tranquil);
+}
+
+form div{
+    display: flex;
 }
 
 #dadosCartao p {
