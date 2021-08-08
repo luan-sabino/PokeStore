@@ -4,11 +4,12 @@ const path = require('path');
 const router = express.Router();
 const sqlite3 = require('sqlite3').verbose();
 const bp = require('body-parser');
+const port = 3000;
 
 app.use(express.json());
 app.use(express.static(__dirname + '/public'));
 app.use('/', router);
-app.listen(process.env.port || 3000);
+app.listen(process.env.port || port);
 console.log('Running at Port 3000');
 
 
