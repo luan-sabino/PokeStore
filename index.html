@@ -9,26 +9,40 @@
     <link rel="stylesheet" href="style/shop.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/pokeball.png">
     <title>Pokebuy</title>
 </head>
 
 <body id="index">
-    <header>
-        <a href="index.html">Pokebuy</a>
+    <header id="nav-bar">
+        <a href="/">Inicio</a>
         <img src="img/pokeball.png" alt="">
-        <a href="carrinho.html">Carrinho</a>
+        <div id="containerbtns">
+            <a id="entrar">Entrar</a>
+            <a href="/carrinho">Carrinho</a>
+        </div>
     </header>
-    <div class="container">
+    <div class="filtros">
         <div class="categorias">
-            <a onclick="filtraProduto('Todos');">Todos</a>
-            <a onclick="filtraProduto('Agua');">Agua</a>
-            <a onclick="filtraProduto('Fogo');">Fogo</a>
-            <a onclick="filtraProduto('Grama');">Grama</a>
-            <a onclick="filtraProduto('Inseto');">Inseto</a>
+            <a>Todos</a>
+            <a>Agua</a>
+            <a>Fogo</a>
+            <a>Grama</a>
+            <a>Inseto</a>
         </div>
-        <div class="produtos" id="produtos">
-
+        <div class="precos">
+            <div class="ordenar">
+                <label for="ordernar-por">Ordernar por:</label>
+                <select id="ordernar_por">
+                    <option value="nenhum" selected="selected">Nenhum</option>
+                    <option value="menor">Menor Preço</option>
+                    <option value="maior">Maior Preço</option>
+                </select>
+            </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="produtos" id="produtos"></div>
     </div>
 </body>
 <script src="js/main.js"></script>
