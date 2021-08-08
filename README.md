@@ -1,27 +1,19 @@
-# PokeStore
+<h1 align="center">PokeStore</h1>
 
-## :computer:
-![Desktop](readme-src/desktop.png)
-
-## :iphone:
-<table>
-  <tr>
-    <td>Tablet</td>
-     <td>Mobile Medium</td>
-  </tr>
-  <tr>
-    <td valign="top"><img height="700px" width="auto" src="readme-src/tablet.png"></td>
-    <td valign="top"><img height="700px" width="auto" src="readme-src/mobile.png"></td>
-  </tr>
- </table>
-
- ## Sobre
+<h2 align="center">Sobre</h2>
 
  Projeto realizado para a materia de "Desenvolvimento de Aplicações para a Internet" do curso de Ciência da Computação, na FCT - Unesp.
 
- ## Descrição do projeto
+<h2 align="center">💻</h2>
 
- A aplicação consiste na simulação de um site de vendas. Esse site contém, necessariamente, três páginas
+![Desktop](readme-src/desktop.png)
+
+## Descrição do Projeto / UserStories
+
+<details>
+  <summary>Clique para expandir!</summary>
+  
+  A aplicação consiste na simulação de um site de vendas. Esse site contém, necessariamente, três páginas
 
  - [x] 1. Página principal com apresentação de produtos
    - [x] a. Listagem de todos produtos disponíveis.
@@ -44,7 +36,47 @@
         - [x] a. Página com resumo do pedido.
         - [x] b. Gerar um número aleatório para representar o tempo de frete.
 
-    - [ ] 4. Utilizar banco de dados para armazenamento das informações;
-    - [ ] 5. Adicionar filtragens/ordenações por preço;
-    - [ ] 6. Implementar um cadastro para o usuário;
-    - [ ] 7. Na página de detalhes de compra e dados de usuário, verificar se há um cadastro para o usuário. Se não, realiza-lo antes de prosseguir com pedido.  
+    - [x] 4. Utilizar banco de dados para armazenamento das informações;
+    - [x] 5. Adicionar filtragens/ordenações por preço;
+    - [x] 6. Implementar um cadastro para o usuário;
+    - [x] 7. Na página de detalhes de compra e dados de usuário, verificar se há um cadastro para o usuário. Se não, realiza-lo antes de prosseguir com pedido.  
+
+</details>
+
+## Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+## Inicializando a aplicação
+
+Primeiro você vai precisar clonar o repositorio:
+  `gh repo clone luan-sabino/PokeStore`
+
+Abra a pasta pelo terminal, e em seguida execute: `node index.js`
+
+O servidor irá iniciar na porta 3030, basta acessar: `localhost:3000`
+
+Obs: Caso queira trocar a porta, basta ir no arquivo `"index.js"`, e alterar a variavel `port`
+
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Express.js](https://expressjs.com/pt-br/)
+- [Node.js](https://nodejs.org/en/)
+- [SQLite](https://www.sqlite.org/index.html)
+
+### Autor
+---
+
+<a href="https://blog.rocketseat.com.br/author/thiago/">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/39681078?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Luan Sabino</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago//" title="Rocketseat">🚀</a>
+
+
+Feito com ❤️ por Luan Sabino 👋🏽 Entre em contato!
+
+[![Twitter Badge](https://img.shields.io/badge/-@lupsabino-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/lupsabino)](https://twitter.com/lupsabino) [![Linkedin Badge](https://img.shields.io/badge/-Luan-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/luan-sabino/)](https://www.linkedin.com/in/luan-sabino/) 
