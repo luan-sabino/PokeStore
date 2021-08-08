@@ -30,7 +30,7 @@
         </div>
         <div class="dados">
             <header>Dados do Usuario</header>
-            <form method="post" id="dadosUsuario" onsubmit="finalizaCompra();">
+            <form method="post" id="dadosUsuario">
                 <input type="text" name="fpNome" id="fpNome" placeholder="Nome completo" required minlength="5" maxlength="25">
                 <input type="text" name="fCPF" id="fCPF" placeholder="CPF 999.999.999-99" required
                     pattern="^(\d{3}.\d{3}.\d{3}-\d{2})|(\d{11})$">
@@ -47,6 +47,8 @@
         <input type="submit" form="dadosUsuario" value="Finalizar" id="sendSubmit"></input>
     </div>
 </body>
+<script src="js/carrinho.js"></script>
 <script src="js/main.js"></script>
-
+<script src="js/render.js"></script>
+<script src="js/requests.js"></script>
 </html>

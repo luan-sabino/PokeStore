@@ -50,15 +50,17 @@ router.get('/produtos', (req, res)=>{
 });
 
 router.get('/', (req, res)=>{
-    res.sendFile(path.join(__dirname+'/index.html'));
+    res.sendFile(path.join(__dirname+'/public/view/loja.html'));
 })
 
+console.log(__dirname);
+
 router.get('/carrinho', (req, res)=>{
-    res.sendFile(path.join(__dirname+'/carrinho.html'));
+    res.sendFile(path.join(__dirname+'/public/view/carrinho.html'));
 })
 
 router.get('/finalizado', (req, res)=>{
-    res.sendFile(path.join(__dirname+'/finalizado.html'));
+    res.sendFile(path.join(__dirname+'/public/view/finalizado.html'));
 })
 
 router.post('/userinfo', (req, res) =>{
