@@ -3,7 +3,6 @@ const app = express();
 const path = require('path');
 const router = express.Router();
 const sqlite3 = require('sqlite3').verbose();
-const bp = require('body-parser');
 const port = 3000;
 
 app.use(express.json());
@@ -54,7 +53,7 @@ router.get('/', (req, res)=>{
     res.sendFile(path.join(__dirname+'/public/view/loja.html'));
 })
 
-console.log(__dirname);
+//console.log(__dirname);
 
 router.get('/carrinho', (req, res)=>{
     res.sendFile(path.join(__dirname+'/public/view/carrinho.html'));
@@ -105,14 +104,15 @@ router.post('/logar', (req, res) =>{
 
 router.post('/cadastrar', (req, res)=>{
     let userData = req.body;
-    let sql = `INSERT INTO usuarios VALUES (${userData.cpf}, '${userData.nome}', '${userData.email}', '${userData.senha}', null)`;
+    let sql = `INSERT INTO usuarios VALUES (${userData.cpf}, '${userData.nome}', '${userData.email}', '${userData.senha}', null, null)`;
+    //console.log(userData);
 
     db.run(sql, (error)=>{
         if(error != null){
             res.status(406).send("Nao foi possivel completar");
+            console.log(error.message);
         }else res.send();
     });
-    
 
 })
 
