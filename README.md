@@ -56,7 +56,7 @@ Primeiro você vai precisar clonar o repositorio:
 
 Abra a pasta pelo terminal, e em seguida execute: `node index.js`
 
-O servidor irá iniciar na porta 3030, basta acessar: `localhost:3000`
+O servidor irá iniciar na porta 3000, basta acessar: `localhost:3000`
 
 Obs: Caso queira trocar a porta, basta ir no arquivo `"index.js"`, e alterar a variavel `port`
 
