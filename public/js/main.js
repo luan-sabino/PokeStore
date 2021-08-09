@@ -69,7 +69,7 @@ function logarUsuario(){
     mudaANavBarSeLogado();
     if(usuarioEhAutenticado() == true){
         window.location.reload();
-    }else if(usuarioEhAutenticado == false){
+    }else if(usuarioEhAutenticado() == false){
         alert("Email ou senha incorretos, tente novamente.");
     }
 }
