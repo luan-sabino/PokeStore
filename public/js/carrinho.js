@@ -62,7 +62,7 @@ function preencheEnderecoNoFormulario(endereco){
 
 async function finalizarCompraEAtualizarDados(event) {
 
-    
+    event.preventDefault();
 
     var userDataUpdated = getInfoDoUsuarioNoForm(event);
 
