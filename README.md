@@ -71,10 +71,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Autor
 ---
 
-<a href="https://blog.rocketseat.com.br/author/thiago/">
+<a href="https://luan-sabino.github.io">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/39681078?v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Luan Sabino</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago//" title="Rocketseat">🚀</a>
+ <sub><b>Luan Sabino</b></sub></a> <a href="https://luan-sabino.github.io" title="Portifolio">🚀</a>
 
 
 Feito com ❤️ por Luan Sabino 👋🏽 Entre em contato!
